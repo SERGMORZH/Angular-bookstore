@@ -1,0 +1,41 @@
+<table class="table table-striped">
+    <thead>
+       <tr>
+         <td><h2>Категории</h2></td>
+           <td>  </td>
+           <td><h2> Список книг</h2></td>
+       </tr>
+     </thead>
+
+  <tbody>
+       <tr>
+          <td></td>
+          <td></td>
+          <td>
+
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <td><h3>Название</h3></td>
+    <td><h3>Автор</h3></td>
+    <td><h3>Цена</h3></td>
+    <td>  </td>
+    <td> </td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let Book of books">
+    <td>{{Book.Name}}</td>
+    <td> {{Book.Author}} </td>
+    <td> {{Book.Price}} </td>
+    <input type="button" value="Добавить в корзину " class="btn btn-default"  />
+    <td>  </td>
+     </tr>
+  </tbody>
+</table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+

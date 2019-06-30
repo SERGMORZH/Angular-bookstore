@@ -7,8 +7,62 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    a.navbar-brand{
+      width: 200px;
+      margin-left: 20px;
+      margin-right: 60px;
+    }
+    a.navbar-text{
+      margin: 20px;
+      margin-right: 60px;}
+    a.navbar-right{
+      margin: 20px;
+      margin-right: 60px;
+    }
+    #header{
+      background-color: #ccc;
+    }
+    #sidebar1 {
+      float: left;
+      width: 32%;
+      padding: 0 10px 0 20px;
+    }
+    #listbook{
+      background-color: #fafafa;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      margin-left: 36%;
+      margin-right: 1%;
+      padding: 15px;
+      width: 63%;
+    }
+    </style>
 </head>
 <body>
-  <app-root></app-root>
+<header>
+  <div class="navbar navbar-inverse" role="navigation" />
+  <a class="navbar-brand"  href="#">КНИЖНЫЙ МАГАЗИН</a>
+  <b>                                                    </b>
+  <a class="navbar-right"/>
+  <input type="submit" class="btn btn-default navbar-btn" value="Поиск по автору" />
+
+  <a class="navbar-text "/>
+  <b>Ваша корзина:</b>
+  <input type="text" size="5"/> книг,
+  <input type="text" size="5" redonly="true"/> (руб.)
+
+  <a class="navbar-right "/>
+  <input type="submit" class="btn btn-default navbar-btn" value="Заказать" />
+
+  <a class="navbar-right "/>
+  <input type="submit" class="btn btn-default navbar-btn" value="Администратор" (click)="visible()" />
+
+  <hr>
+</header>
+<div>
+    <app-store> </app-store>
+</div>
+
 </body>
 </html>
